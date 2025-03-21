@@ -1,0 +1,1039 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 15px 0;
+    transition: all 0.4s ease-in-out;
+}
+.video-section{
+    background-color: #333;
+}
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-brand:hover{
+    color: #ffc107 !important;
+    transform: translateX(5px);  
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.navbar-toggler:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Offcanvas Navbar Styling */
+.offcanvas {
+    background:#333 !important; /* Dark background with slight transparency */
+    width: 280px; /* Wider for better UI */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in effect */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    
+}
+
+/* Offcanvas Header */
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Offcanvas Title */
+.offcanvas .offcanvas-title {
+    font-size: 1.6rem;
+    color: gold;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Close Button */
+
+
+/* Offcanvas Nav Links */
+.offcanvas-body .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 12px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Neon Glow Hover Effect */
+.offcanvas-body .nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateX(5px);
+}
+
+.offcanvas-body .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ffc107;
+    transition: width 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+.offcanvas-body .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Adjust Menu Spacing */
+.offcanvas-body .navbar-nav {
+    padding-top: 20px;
+}
+
+
+
+
+
+/* Carousel Styling */
+.carousel-item img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carousel-caption button {
+    background: #ffc107;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.carousel-caption button:hover {
+    background: #ffca28;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+
+
+
+
+
+
+.about-section {
+    background-color: #333; /* Dark Gray Background */
+    padding: 60px 0;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+
+.about-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: gray;
+    color: black;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+.projects-section {
+    background-color: #333; /* Dark gray background */
+    padding: 60px 0;
+}
+
+.project-card {
+    height: 300px;
+    width: 100%; /* Responsive width */
+}
+
+.project-card .card {
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    background: url('kitchen-1940175_1920.jpg') no-repeat center center/cover;
+    filter: brightness(0.7); /* Darkens the card */
+}
+
+.card-img {
+    width: 100%;
+
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+
+
+
+
+
+
+
+
+
+
+
+.customer-reviews {
+    background-color: #333; /* Dark Gray Background */
+    padding: 50px 0;
+    
+}
+
+.section-title {
+    color: gold !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-heading {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.customer-reviews img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+}
+
+.customer-reviews h4 {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.customer-reviews p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Apply background image with overlay */
+.section-bg {
+    position: relative;
+    background: url('back.jpg') no-repeat center center/cover;
+}
+
+/* Overlay for better text visibility */
+.section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Ensure content is above the overlay */
+.imgbg {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
+}
+
+/* Styling for text */
+.text-content h5 {
+    color: gold;
+}
+
+.text-content h1, 
+.text-content p {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Enhances readability */
+}
+
+.btn-custom {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: black;
+}
+
+/* Video Styling */
+.video-frame {
+    border-radius: 10px;
+}
+
+
+
+.logo-section {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.company-name {
+    display: inline-block;
+    color: white; /* White text for visibility */
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: gold;
+}
+
+/* Card Styling */
+.image-card {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    background: url('kitchen-1940175_1920.jpg') no-repeat center center/cover;
+    
+}
+
+/* Hover Effect */
+.image-card:hover {
+    transform: scale(1.05);
+}
+.row6{
+    background-color:  #333; ;
+}
+
+/* Overlay Text (Hidden Initially) */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6); /* Adds a dark transparent overlay */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show Text on Hover */
+.image-card:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Container Fluid with Dark Gray Background */
+.hero-section {
+    background-color: #333;
+    padding: 0;
+    padding-top: 80px;
+}
+
+/* Container with Background Image */
+.hero-content {
+    background: url('living-room-8261882_1920.jpg') no-repeat center center/cover;
+    
+}
+/* Text Content - Covers Full 50% Width */
+.text-content {
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+/* Logo Styling - Positioned at the Top */
+.hero-logo {
+    max-width: 150px;
+    margin-bottom: 0px;
+}
+
+/* Title Styling */
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Small Button Styling */
+.btn-custom {
+    background-color:orange;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 5px 50px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #d4af37; /* Darker Gold */
+}
+
+
+
+
+
+
+
+
+/* General Section Styling */
+.originalreviews {
+    
+    background-color: #333; /* Dark Gray Background */
+}
+
+/* Title Styling */
+.originalreviews h1 {
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+/* Card Styling */
+.originalreviews .card {
+    background-color: rgb(70, 68, 68) !important;
+    color: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+}
+
+/* Card Number */
+.card .card-title {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card Body Text */
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Card Footer - Reviewer Details */
+.card-footer {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-top: none;
+}
+
+/* Profile Image */
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid gold;
+}
+
+/* Reviewer Name */
+.card-footer span {
+    font-weight: 600;
+    color: white;
+}
+
+/* Reviewer Role */
+.card-footer small {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+/* Responsive Adjustments */
+
+/* Container Fluid Background */
+.banner-section {
+    padding-top: 50px;
+    background-color: #333;
+}
+
+/* Content Container */
+.banner-content {
+    display: flex;
+  
+    background: url('interior-1336161_1920.jpg') no-repeat center center/cover;
+    
+}
+
+/* Text Section */
+.text-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay effect */
+    padding: 50px;
+    color: white;
+    width: 100%;
+}
+
+.brand-logo {
+    width: 80px; /* Adjust logo size */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Custom Button */
+.custom-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Responsive Design */
+
+
+/* Numbers Section */
+.numbers-section {
+    background-color: #333; /* Dark Gray */
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Number Box Styling */
+.number-box {
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10px 0;
+    
+   
+}
+
+/* Large Numbers */
+.number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Plus Symbol Styling */
+.number span {
+    font-size: 1.5rem;
+    color: gold;
+    margin-left: 5px;
+}
+
+/* Mini White Divider */
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+/* Description Below Numbers */
+.number-box p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* Responsive Adjustments */
+
+
+/* News Section Styles */
+.news-section {
+    background-color: #333; /* Dark background for contrast */
+    padding: 5rem 0;
+}
+
+/* Headings */
+.news-section h5 {
+    color: gold;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.news-section h1 {
+    color: white;
+    font-weight: bold;
+}
+
+/* News Cards */
+.news-card {
+    border: none !important; /* Remove card border */
+    height: 400px !important;
+    margin-bottom: 100px;
+    background-color: transparent; /* Ensure background is clear */
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.news-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+   
+}
+
+/* Card Body */
+.news-card .card-body {
+    text-align: left; /* Align text to left */
+    background-color: #333; /* Gray background for text area */
+    padding: 20px;
+     /* Rounded corners at bottom */
+}
+
+/* Card Title */
+.news-card .card-title {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Card Text */
+.news-card .card-text {
+    text-align: justify;
+    font-size: 1rem;
+
+    color: #ddd;
+}
+
+/* Read More Link */
+.read-more {
+    display: inline-block;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    color: #ffcc00;
+}
+
+.footer{
+    background: url('kitchen-1940175_1920.jpg') no-repeat center center/cover;
+    padding-top: 50px;
+    height: auto;
+}
+/* Footer Styles */
+.footer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('kitchen-1940175_1920.jpg') center/cover no-repeat;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 60px 0;
+   
+}
+
+/* Headings */
+
+
+/* General Text */
+.footer p{
+    font-size: 14px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: gold;
+}
+
+/* Custom Button */
+.btn-custom {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: white;
+    color: black;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+/* Company Info */
+.company-info h5 img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Newsletter */
+.newsletter input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.774);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-subscribe {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-subscribe:hover {
+    background: white;
+    color: black;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+   
+}
+
+.social-icons i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: gold;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 12px;
+    color: #bbb;
+}
+
+
+/*     Media Query for 997px */
+@media (max-width: 997px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .row {
+        text-align: center;
+    }
+    .col-lg-4 {
+        margin-bottom: 20px;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .project-title {
+        font-size: 1.1rem;
+    }
+    .project-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* ---- */
+
+
+/* Media Query for 786px */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
+    .text-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .video-frame {
+        width: 100%;
+        height: 250px;
+    }
+    .hero-content {
+        padding: 50px 0;
+    }
+
+    .text-content {
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .hero-logo {
+        margin: 0 auto 20px;
+    }
+    .card {
+        text-align: center;
+    }
+    .card-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .reviewer-img {
+        margin-bottom: 10px;
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .text-box {
+        text-align: center;
+        padding: 20px;
+    }
+    .number {
+        font-size: 2.5rem;
+    }
+    .number span {
+        font-size: 1.2rem;
+    }
+    .divider {
+        width: 30px;
+    }
+    .number-box p {
+        font-size: 0.9rem;
+    }
+    .number-box{
+        
+        left: 150px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+.social-icons{
+    display: none;
+
+}
+    .footer-section {
+        max-width: 100%;
+    }
+}
+
+
+/* ---- */
+
+/* ---Media Query for 567px */
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 55%;
+    }
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+    .carousel-caption button {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+    .news-card{
+        width: 100%;
+    }
+    .image-card{
+        width: 200%;
+    }
+    .project-card{
+        width: 200%;
+        
+    }
+}
+/* ------- */
+
+/* Media Query for 360px */
+
+@media (max-width: 360px) {
+    
+    .project-card{
+        width: 100%;
+        
+    }
+    .image-card{
+        width: 100%;
+    }
+    .number-box{
+        left: 80px;
+    }
+    
+}
